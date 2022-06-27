@@ -1,0 +1,179 @@
+.home {
+    height: 500px;
+}
+
+
+.title {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.name {
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+}
+
+.name h2 {
+    font-size: 25px;
+    color: #6bd6f0;
+
+}
+
+.title p {
+    font-size: 18px;
+    color: #e2e2e2;
+    cursor: pointer;
+}
+
+.line {
+    width: 50px;
+    height: 1px;
+    background-color: #6bd6f0;
+    margin-right: 10px;
+}
+
+.market {
+    height: 60px;
+    background-color: red;
+}
+
+.orbitexToken {
+    padding: 50px 50px 50px;
+    background: rgba(107, 214, 240, 0.2);
+    backdrop-filter: blur(100px);
+
+    border-radius: 5px;
+    text-align: center;
+}
+
+.orbitexToken h2 {
+    margin-bottom: 50px;
+    background-color: green;
+}
+
+.G-card-color {
+    background: rgba(107, 214, 240, .2);
+    -webkit-backdrop-filter: blur(100px);
+    backdrop-filter: blur(100px);
+    border-radius: 5px;
+}
+
+.orbitexToken .divbtn {
+    text-align: center;
+    margin-top: 50px;
+}
+
+.childbtn {
+    width: 200px;
+    height: 40px;
+    border: 2px solid #6BD6F0;
+    background: #6BD6F0;
+    color: #08488a;
+    font-size: 18px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.orbitexTokenImg {
+    display: flex;
+    justify-content: flex-start;
+}
+
+.news {
+    margin-top: 65px;
+    justify-content: space-evenly;
+    margin-bottom:90px;
+}
+
+.new {
+    height: 300px;
+    background-color: red;
+}
+
+.titleNews p {
+    font-size: 18px;
+    color: #e2e2e2;
+    cursor: pointer;
+}
+
+
+.titleNews {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.subscribe-block-avatar {
+    display: flex;
+    justify-content: center;
+    height: 290px;
+}
+
+.subscribe-block {
+    margin-top: -40px;
+    padding: 100px;
+    background: rgba(107, 214, 240, 0.2);
+    backdrop-filter: blur(100px);
+    border-radius: 5px;
+    text-align:center;
+
+    h2 {
+        color: #6bd6f0;
+    }
+
+    p {
+        color: #E2E2E2;
+        margin: 20px;
+        font-size: x-large;
+    }
+
+    .emialDiv {
+        align-items: center;
+        margin: auto;
+        height: 60px;
+    }
+
+
+    .emailInp {
+        margin-top: 40px;
+        background: rgba(118, 118, 128, 0.24);
+        width: 400px;
+        border-radius: 5px;
+        color: #6bd6f0;
+
+    }
+
+    .subscribeBtn {
+        box-sizing: border-box;
+        margin-top: 70px;
+        width: 200px;
+        height: 40px;
+        left: 540px;
+
+        background: #6BD6F0;
+        border: 2px solid #6BD6F0;
+        border-radius: 5px;
+    }
+
+}
+
+
+@media (max-width: 1024px) {
+    .orbitexToken {
+        padding: 50px 50px 50px;
+    }
+    .subscribe-block{
+        .emailInp{
+            width: 200px;
+            
+        }
+    }
+ 
+
+}
+
+
+
+

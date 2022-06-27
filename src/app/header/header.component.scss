@@ -1,0 +1,30 @@
+header {
+    height: 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 1000;
+}
+
+nav {
+    display: flex;
+    align-items: center;
+
+    span {
+        font-size: 18px;
+        color: #e2e2e2;
+        margin-right: 50px;
+        cursor: pointer;
+    }
+}
+
+.login-button {
+    width: 200px;
+    height: 40px;
+    border: 2px solid #6BD6F0;
+    font-size: 18px;
+    border-radius: 5px;
+    cursor: pointer;
+    background: none;
+    color: #6bd6f0;
+}

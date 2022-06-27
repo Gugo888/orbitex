@@ -1,1 +1,30 @@
 /* You can add global styles to this file, and also import other style files */
+
+/* Importing Bootstrap SCSS file. */
+@import "~bootstrap/scss/bootstrap";
+
+/* Importing Datepicker SCSS file. */
+@import "node_modules/ngx-bootstrap/datepicker/bs-datepicker";
+
+._pointer {
+    cursor: pointer;
+}
+
+body {
+    background-color: #020659;
+}
+._theme-light {
+    color: #6BD6F0 !important;
+}
+
+._theme-light-bg {
+    background-color: #6BD6F0 !important;
+}
+
+._theme-dark {
+    color: #020659 !important;
+}
+
+._theme-dark-bg {
+    background-color: #020659 !important;
+}
