@@ -16,6 +16,8 @@ import { StakingComponent } from './staking/staking.component';
 import { GamesComponent } from './games/games.component';
 import { NotFoundComponent } from './not-found/not-found.component';
 import { HttpClientModule } from '@angular/common/http';
+import { LoginComponent } from './registration/login/login.component';
+import { RegisterComponent } from './registration/register/register.component';
 
 
 @NgModule({
@@ -30,7 +32,9 @@ import { HttpClientModule } from '@angular/common/http';
     NewsComponent,
     StakingComponent,
     GamesComponent,
-    NotFoundComponent
+    NotFoundComponent,
+    LoginComponent,
+    RegisterComponent
   ],
   imports: [
     BrowserModule,

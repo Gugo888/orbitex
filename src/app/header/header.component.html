@@ -1,5 +1,6 @@
 <header>
-    <img src="assets/image/logo.png">
+
+    <img src="assets/image/logo.png" routerLink="" style="cursor:pointer">
 
     <nav class="d-none d-lg-flex">
         <span routerLink="" routerLinkActive="_theme-light" [routerLinkActiveOptions]="{exact:true}">Home</span>
@@ -10,7 +11,7 @@
         <span routerLink="/games" routerLinkActive="_theme-light" class="me-0">Games</span>
     </nav>
 
-    <button class="login-button d-none d-lg-inline">Sign In</button>
+    <button class="login-button d-none d-lg-inline" routerLink="/login">Sign In</button>
 
     <img src="assets/image/banan.png" class="d-lg-none _pointer">
 </header>

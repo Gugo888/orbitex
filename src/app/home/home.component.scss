@@ -1,7 +1,15 @@
 .home {
     height: 500px;
+    margin-top: 40px;
 }
 
+h4 {
+    font-family: 'Gotham';
+    font-style: normal;
+    font-weight: 400;
+    margin-top: 40px;
+    margin-bottom: 40px;
+}
 
 .title {
     display: flex;
@@ -84,12 +92,11 @@
 .news {
     margin-top: 65px;
     justify-content: space-evenly;
-    margin-bottom:90px;
+    margin-bottom: 90px;
 }
 
 .new {
     height: 300px;
-    background-color: red;
 }
 
 .titleNews p {
@@ -103,6 +110,7 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
+    margin-top: 40px;
 }
 
 .subscribe-block-avatar {
@@ -117,7 +125,7 @@
     background: rgba(107, 214, 240, 0.2);
     backdrop-filter: blur(100px);
     border-radius: 5px;
-    text-align:center;
+    text-align: center;
 
     h2 {
         color: #6bd6f0;
@@ -164,16 +172,37 @@
     .orbitexToken {
         padding: 50px 50px 50px;
     }
-    .subscribe-block{
-        .emailInp{
+
+    .subscribe-block {
+        .emailInp {
             width: 200px;
-            
+
         }
     }
- 
+
 
 }
 
+.textHome {
+    word-wrap: break-word;
+    padding-left: 45px;
+    padding-right: 45px;
+    margin-bottom: 10px;
+}
 
-
-
+.textHome p{
+    margin-top: -8px;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+.textHome h2 {
+    color: #6bd6f0;
+    margin-top: -16px;
+    text-align: left;
+    padding-left: 15px;
+}
+.textChild {
+        background: rgba(107, 214, 240, 0.2);
+        color: #e2e2e2;
+        padding-bottom: 20px;
+}
