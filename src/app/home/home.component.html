@@ -1,5 +1,5 @@
 <div class="home container-fluid d-sm-table d-md-flex d-lg-flex d-xl-flex text-center">
-    <div class="col-sm-12 col-md-6 col-lg-6 col-xl-6">
+    <div class="col-sm-12 col-md-6 col-lg-6 col-xl-6" style="padding-top:30px">
         <p class="display-3 d-inline" style="color:#E2E2E2">BUY AND SELL</p>
         <p class="display-3 d-inline" style="color:#6BD6F0"> CRYPTOCOIN</p>
         <h4 style="color:#E2E2E2">
@@ -13,7 +13,7 @@
     </div>
 </div>
 
-<div class="title">
+<div class="titleMarket">
     <div class="name">
         <div class="line"></div>
         <h2>Market</h2>
@@ -21,16 +21,18 @@
     <p>See All</p>
 </div>
 
-<div class="news container-fluid d-sm-table d-md-flex d-lg-flex d-xl-flex text-center" style="background-color:#6BD6F0">
-    <div class="new col-sm-12 col-md-6 col-lg-3 col-xl-2">dhudheudhehduedue</div>
-    <div class="new col-sm-12 col-md-6 col-lg-3 col-xl-2">uququuququuqquuqqu</div>
-    <div class="new col-sm-12 col-md-6 col-lg-3 col-xl-2">opopoppooppoop</div>
-    <div class="new col-sm-12 col-md-6 col-lg-3 col-xl-2">mnmnmnmnmnnmnm</div>
+<div class="market container-fluid d-sm-table d-md-flex d-lg-flex d-xl-flex text-center"
+    style="background-color:#6BD6F0">
+    <div class="marketChild col-sm-12 col-md-6 col-lg-3 col-xl-2">dhudheudhehduedue</div>
+    <div class="marketChild col-sm-12 col-md-6 col-lg-3 col-xl-2">uququuququuqquuqqu</div>
+    <div class="marketChild col-sm-12 col-md-6 col-lg-3 col-xl-2">opopoppooppoop</div>
+    <div class="marketChild col-sm-12 col-md-6 col-lg-3 col-xl-2">mnmnmnmnmnnmnm</div>
 </div>
 
 <div class="orbitexTokenImg col-sm-12 col-md-8 col-lg-6 col-xl-6">
     <img src="/assets/image/cosmonavt.png" class="col-6">
 </div>
+
 <div class="orbitexToken .G-card-color">
     <h2>OrbiteX Token</h2>
     <p> Orbitex has launched its own token, the OrbiteX token. OrbiteX is a utility token of Orbitex
@@ -50,21 +52,24 @@
     <p>See All</p>
 </div>
 
-<div class="container-fluid d-sm-table d-md-flex d-lg-flex d-xl-flex text-center" style="margin-top:40px">
-    <div *ngFor="let news of this.newsInHomePage" class="new col-sm-8 col-md-4 col-lg-4 col-xl-4">
-        <img [src]="news.new.pictureUrl" class="col-10">
-        <div class="textHome">
-            <div>
-                <h1 class="textChild">{{news.new.title}}</h1>
-                <p class="textChild">{{news.new.discription}}</p>
-                <h2 class="textChild">Learn More</h2>
-            </div>
+
+
+<div class="container-fluid  d-sm-table d-md-flex d-lg-flex d-xl-flex">
+    <div *ngFor="let news of this.newsInHomePage" class="col-sm-12 col-md-4 col-lg-4 col-xl-4  "   >
+        <div class="container col-12  " >
+                <img [src]="news.new.pictureUrl" class="col-12">
+                <div style="background: rgba(107,214,240,.2); margin-top: -8px;">
+                    <h2 class="col-12 text-center text-white mt-2">{{news.new.title}}</h2>
+                    <p class="col-12 text-white px-3">{{news.new.discription}}</p>
+                    <h4 class="col-12 ms-3" style="color:#6BD6F0">Learn More</h4>
+                </div>
         </div>
     </div>
 </div>
 
 
-<div style="margin-top:500px">
+
+<div style="margin-top:100px">
     <div class="subscribe-block-avatar">
         <img src="/assets/image/namak.png">
     </div>

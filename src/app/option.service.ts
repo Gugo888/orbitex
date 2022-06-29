@@ -17,4 +17,8 @@ export class Options {
   getThreeActiveNews(param:ActiveNews) {
     return this.http.post(`${this.link}news/allactive/bysegment`,param)
   }
+
+  getTradeSymbol() {
+    return this.http.get(`${this.link}/bololextradingplatform/publicapis/tradablesymbols4`)
+  }
 }

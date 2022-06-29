@@ -1,4 +1,4 @@
-import { Component, OnDestroy, OnInit } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
 import { Options } from '../option.service';
 
 @Component({
@@ -7,11 +7,8 @@ import { Options } from '../option.service';
   styleUrls: ['./home.component.scss']
 })
 export class HomeComponent implements OnInit {
-  newsInHomePage: any
-  nkr = "http://apiorbitex.somee.com/news/pictures/132975903836802556.png";
-  nkr1 = "https://apiorbitex.somee.com/news/pictures/132975902779536968.png";
-  nkr2 = "https://apiorbitex.somee.com/news/pictures/132975899760121812.png";
-  countInfo = {
+  newsInHomePage: any;
+  countNews = {
     segmentsElementCount: 3,
     startId: 0
   };
@@ -19,10 +16,8 @@ export class HomeComponent implements OnInit {
   }
 
   getNews() {
-    this.service.getThreeActiveNews(this.countInfo).subscribe(info => {
+    this.service.getThreeActiveNews(this.countNews).subscribe(info => {
       this.newsInHomePage = info;
-      console.log(this.newsInHomePage);
-
     })
   }
 
