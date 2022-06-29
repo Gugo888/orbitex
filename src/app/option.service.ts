@@ -6,7 +6,6 @@ import {ActiveNews} from '../app/type.modal'
 })
 export class Options {
   link = 'https://apiorbitex.somee.com/';
-  boolHeader = false;
 
   constructor(private http:HttpClient) {}
 
@@ -18,7 +17,8 @@ export class Options {
     return this.http.post(`${this.link}news/allactive/bysegment`,param)
   }
 
-  getTradeSymbol() {
-    return this.http.get(`${this.link}/bololextradingplatform/publicapis/tradablesymbols4`)
+  getFourTradeSymbol() {
+    return this.http.get(`${this.link}bololextradingplatform/publicapis/tradablesymbols4`)
   }
+
 }

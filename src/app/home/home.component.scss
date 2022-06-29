@@ -1,15 +1,17 @@
 .home {
     height: 500px;
     margin-top: 40px;
+
+    h4 {
+        font-family: 'Gotham';
+        font-style: normal;
+        font-weight: 400;
+        margin-top: 40px;
+        margin-bottom: 40px;
+    }
 }
 
-h4 {
-    font-family: 'Gotham';
-    font-style: normal;
-    font-weight: 400;
-    margin-top: 40px;
-    margin-bottom: 40px;
-}
+
 
 .titleMarket {
     display: flex;
@@ -84,15 +86,6 @@ h4 {
     justify-content: flex-start;
 }
 
-.market {
-    margin-top: 65px;
-    justify-content: space-evenly;
-    margin-bottom: 90px;
-}
-
-.marketChild {
-    height: 300px;
-}
 
 .titleNews p {
     font-size: 18px;
@@ -173,5 +166,31 @@ h4 {
             width: 200px;
 
         }
+    }
+    .market {
+        margin-top: 20px;
+        padding-top: 10px;
+    }
+}
+
+@media (max-width:525px) {
+    .subscribe-block {
+        padding: 33px;
+    }
+
+    .subscribe-block-avatar {
+        display: flex;
+        justify-content: center;
+        height: 218px;
+        padding-bottom: 13px;
+    }
+
+    .childbtn {
+        margin-bottom: 15px;
+    }
+
+    .market {
+        margin-top: 20px;
+        padding-top: 10px;
     }
 }

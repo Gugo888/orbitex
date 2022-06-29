@@ -13,13 +13,26 @@
     margin-bottom: 50px;
 }
 
-p {
-    color: #E2E2E2;
-    padding-left: 50%;
-}
-
 .link {
     img {
         margin: 10px;
+    }
+    p {
+        color: #E2E2E2;
+        padding-left: 50%;
+    }
+}
+
+@media (max-width:525px) {
+    .link {
+        img {
+            margin: 2px;
+        }
+        p {
+            padding-left: 33%;
+        }
+        img:nth-child(3) {
+            margin: -4px;
+        }
     }
 }

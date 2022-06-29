@@ -12,7 +12,7 @@
         <img src="/assets/image/cosmos.png" class="col-6">
     </div>
 </div>
-
+<!-- //////////////////////////////////////////  Market-->
 <div class="titleMarket">
     <div class="name">
         <div class="line"></div>
@@ -21,14 +21,92 @@
     <p>See All</p>
 </div>
 
-<div class="market container-fluid d-sm-table d-md-flex d-lg-flex d-xl-flex text-center"
-    style="background-color:#6BD6F0">
-    <div class="marketChild col-sm-12 col-md-6 col-lg-3 col-xl-2">dhudheudhehduedue</div>
-    <div class="marketChild col-sm-12 col-md-6 col-lg-3 col-xl-2">uququuququuqquuqqu</div>
-    <div class="marketChild col-sm-12 col-md-6 col-lg-3 col-xl-2">opopoppooppoop</div>
-    <div class="marketChild col-sm-12 col-md-6 col-lg-3 col-xl-2">mnmnmnmnmnnmnm</div>
+<div class="container-fluid d-sm-table d-md-flex d-lg-flex d-xl-flex text-center"
+    style="justify-content:space-around;padding-top: 30px;">
+
+    <div class="market col-sm-12 col-md-3 col-lg-3 col-xl-2" style="background:rgba(107, 214, 240, 0.2)">
+        <div class="container col-10 d-flex" style="justify-content:space-around">
+            <img src="/assets/image/ALBC.png">
+            <h5 style="color: #E2E2E2">{{this.marketInHomePage?.result[0].symbol}}
+                <h6>{{this.marketInHomePage?.result[0].volume}}</h6>
+            </h5>
+        </div>
+        <br>
+        <div class="container col-10 d-flex" style="justify-content:space-around">
+            <div>
+                <h6 style="color: #E2E2E2">1 H Change</h6>
+                <h6 style="color: #E2E2E2">24 H Change</h6>
+            </div>
+            <div>
+                <h6 style="color:#C1373C">8.8%</h6>
+                <h6 style="color:#C1373C">1.2%</h6>
+            </div>
+        </div>
+    </div>
+
+    <div class="market col-sm-12 col-md-3 col-lg-3 col-xl-2" style="background:rgba(107, 214, 240, 0.2)">
+        <div class="container col-10 d-flex" style="justify-content:space-around">
+            <img src="/assets/image/CRM.png">
+            <h5 style="color: #E2E2E2">{{this.marketInHomePage?.result[1].symbol}}
+                <h6>{{this.marketInHomePage?.result[1].volume}}</h6>
+            </h5>
+        </div>
+        <br>
+        <div class="container col-10 d-flex" style="justify-content:space-around">
+            <div>
+                <h6 style="color: #E2E2E2">1 H Change</h6>
+                <h6 style="color: #E2E2E2">24 H Change</h6>
+            </div>
+            <div>
+                <h6 style="color:#05F26C">0.91%</h6>
+                <h6 style="color:#05F26C">1.27%</h6>
+            </div>
+        </div>
+    </div>
+
+    <div class="market col-sm-12 col-md-3 col-lg-3 col-xl-2" style="background:rgba(107, 214, 240, 0.2)">
+        <div class="container col-10 d-flex" style="justify-content:space-around">
+            <img src="/assets/image/LANA.png">
+            <h5 style="color: #E2E2E2">{{this.marketInHomePage?.result[2].symbol}}
+                <h6>{{this.marketInHomePage?.result[2].volume}}</h6>
+            </h5>
+        </div>
+        <br>
+        <div class="container col-10 d-flex" style="justify-content:space-around">
+            <div>
+                <h6 style="color: #E2E2E2">1 H Change</h6>
+                <h6 style="color: #E2E2E2">24 H Change</h6>
+            </div>
+            <div>
+                <h6 style="color:#05F26C">0.73%</h6>
+                <h6 style="color:#05F26C">4.30%</h6>
+            </div>
+        </div>
+    </div>
+
+    <div class="market col-sm-12 col-md-3 col-lg-3 col-xl-2" style="background:rgba(107, 214, 240, 0.2)">
+        <div class="container col-10 d-flex" style="justify-content:space-around">
+            <img src="/assets/image/NBR.png">
+            <h5 style="color: #E2E2E2">{{this.marketInHomePage?.result[3].symbol}}
+                <h6>{{this.marketInHomePage?.result[3].volume}}</h6>
+            </h5>
+        </div>
+        <br>
+        <div class="container col-10 d-flex" style="justify-content:space-around">
+            <div>
+                <h6 style="color: #E2E2E2">1 H Change</h6>
+                <h6 style="color: #E2E2E2">24 H Change</h6>
+            </div>
+            <div>
+                <h6 style="color:#05F26C">0.03%</h6>
+                <h6 style="color:#05F26C">3.25%</h6>
+            </div>
+        </div>
+    </div>
+
 </div>
 
+<!-- ////////////////////////////////////////// orbitex -->
 <div class="orbitexTokenImg col-sm-12 col-md-8 col-lg-6 col-xl-6">
     <img src="/assets/image/cosmonavt.png" class="col-6">
 </div>
@@ -43,7 +121,7 @@
     </div>
 </div>
 
-
+<!-- //////////////////////////////////////////////News -->
 <div class="titleNews">
     <div class="name">
         <div class="line"></div>
@@ -55,26 +133,26 @@
 
 
 <div class="container-fluid  d-sm-table d-md-flex d-lg-flex d-xl-flex">
-    <div *ngFor="let news of this.newsInHomePage" class="col-sm-12 col-md-4 col-lg-4 col-xl-4  "   >
-        <div class="container col-12  " >
-                <img [src]="news.new.pictureUrl" class="col-12">
-                <div style="background: rgba(107,214,240,.2); margin-top: -8px;">
-                    <h2 class="col-12 text-center text-white mt-2">{{news.new.title}}</h2>
-                    <p class="col-12 text-white px-3">{{news.new.discription}}</p>
-                    <h4 class="col-12 ms-3" style="color:#6BD6F0">Learn More</h4>
-                </div>
+    <div *ngFor="let news of this.newsInHomePage" class="col-sm-12 col-md-4 col-lg-4 col-xl-4">
+        <div class="container col-12  ">
+            <img [src]="news.new.pictureUrl" class="col-12">
+            <div style="background: rgba(107,214,240,.2); margin-top: -8px;">
+                <h2 class="col-12 text-center text-white mt-2">{{news.new.title}}</h2>
+                <p class="col-12 text-white px-3">{{news.new.discription}}</p>
+                <h4 class="col-12 ms-3" style="color:#6BD6F0">Learn More</h4>
+            </div>
         </div>
     </div>
 </div>
 
-
+<!-- ////////////////////////////////////// subscruibe -->
 
 <div style="margin-top:100px">
     <div class="subscribe-block-avatar">
         <img src="/assets/image/namak.png">
     </div>
     <div class="subscribe-block">
-        <h6>Subscribe to be informed</h6>
+        <h2>Subscribe to be informed</h2>
         <p>Don’t miss latest news and the best deals in cryptomarkets.</p>
         <div class="emialDiv">
             <input class="emailInp" type="text" placeholder="Enter your email address">
