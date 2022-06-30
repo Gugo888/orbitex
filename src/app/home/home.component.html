@@ -1,7 +1,6 @@
 <div class="home container-fluid d-sm-table d-md-flex d-lg-flex d-xl-flex text-center">
     <div class="col-sm-12 col-md-6 col-lg-6 col-xl-6" style="padding-top:30px">
-        <p class="display-3 d-inline" style="color:#E2E2E2">BUY AND SELL</p>
-        <p class="display-3 d-inline" style="color:#6BD6F0"> CRYPTOCOIN</p>
+        <p class="display-3 d-inline" style="color:#E2E2E2">BUY AND SELL <span style="color:#6BD6F0">CRYPTOCOIN</span></p>
         <h4 style="color:#E2E2E2">
             Everything you need to know about
             cryptocurrency is here for you
@@ -20,86 +19,143 @@
     </div>
     <p>See All</p>
 </div>
+<div class="container-fluid d-sm-table d-md-table d-lg-flex d-xl-flex text-center"
+    style="justify-content:space-around">
 
-<div class="container-fluid d-sm-table d-md-flex d-lg-flex d-xl-flex text-center"
-    style="justify-content:space-around;padding-top: 30px;">
-
-    <div class="market col-sm-12 col-md-3 col-lg-3 col-xl-2" style="background:rgba(107, 214, 240, 0.2)">
-        <div class="container col-10 d-flex" style="justify-content:space-around">
+    <div class="market col-sm-12 col-md-12 col-lg-3 col-xl-2" style="background:rgba(126, 227, 254, 0.3);border-radius: 5px;">
+        <div class="container col-10 d-flex" style="justify-content:space-around;align-items: end;margin-top: 7px">
             <img src="/assets/image/ALBC.png">
             <h5 style="color: #E2E2E2">{{this.marketInHomePage?.result[0].symbol}}
                 <h6>{{this.marketInHomePage?.result[0].volume}}</h6>
             </h5>
         </div>
         <br>
-        <div class="container col-10 d-flex" style="justify-content:space-around">
+        <div class="container col-10 d-flex" style="justify-content:space-around; align-items: baseline">
             <div>
                 <h6 style="color: #E2E2E2">1 H Change</h6>
                 <h6 style="color: #E2E2E2">24 H Change</h6>
             </div>
             <div>
-                <h6 style="color:#C1373C">8.8%</h6>
-                <h6 style="color:#C1373C">1.2%</h6>
+                <div style="margin-top: 3px; display: flex">
+                    <svg style="margin-top: 2px;margin-right: 8px" xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 14 14">
+                        <path d="M13.6663 7.00016L12.4913 5.82516L7.83301 10.4752V0.333496H6.16634V10.4752L1.51634 5.81683L0.333008 7.00016L6.99967 13.6668L13.6663 7.00016Z" fill="#C1373C"/>
+                        </svg>
+                    <h6 style="color:#C1373C">8.8%</h6>
+                </div>
+                 <div style="margin-top: 3px; display: flex;">
+                    <svg style="margin-top: 2px;margin-right: 8px" xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 14 14">
+                        <path d="M13.6663 7.00016L12.4913 5.82516L7.83301 10.4752V0.333496H6.16634V10.4752L1.51634 5.81683L0.333008 7.00016L6.99967 13.6668L13.6663 7.00016Z" fill="#C1373C"/>
+                        </svg>
+                    <h6 style="color:#C1373C">1.2%</h6>
+                </div>
             </div>
         </div>
     </div>
 
-    <div class="market col-sm-12 col-md-3 col-lg-3 col-xl-2" style="background:rgba(107, 214, 240, 0.2)">
-        <div class="container col-10 d-flex" style="justify-content:space-around">
+    <div class="market col-sm-12 col-md-12 col-lg-3 col-xl-2" style="background:rgba(126, 227, 254, 0.3);border-radius: 5px">
+        <div class="container col-10 d-flex" style="justify-content:space-around;align-items: end;margin-top: 7px">
             <img src="/assets/image/CRM.png">
             <h5 style="color: #E2E2E2">{{this.marketInHomePage?.result[1].symbol}}
                 <h6>{{this.marketInHomePage?.result[1].volume}}</h6>
             </h5>
         </div>
         <br>
-        <div class="container col-10 d-flex" style="justify-content:space-around">
+        <div class="container col-10 d-flex" style="justify-content:space-around; align-items: baseline">
             <div>
                 <h6 style="color: #E2E2E2">1 H Change</h6>
                 <h6 style="color: #E2E2E2">24 H Change</h6>
             </div>
             <div>
-                <h6 style="color:#05F26C">0.91%</h6>
-                <h6 style="color:#05F26C">1.27%</h6>
+                <div style="margin-top: 3px; display: flex">
+                    <svg style="margin-top: 2px;margin-right: 8px;" xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 14 14" fill="none">
+                        <path
+                            d="M13.6663 6.99984L12.4913 8.17484L7.83301 3.52484V13.6665H6.16634V3.52484L1.51634
+                             8.18317L0.333008 6.99984L6.99967 0.33317L13.6663 6.99984Z"
+                            fill="#05F26C" />
+                    </svg>
+                    <h6 style="color:#05F26C">0.91%</h6>
+                </div>
+                 <div style="margin-top: 3px; display: flex;">
+                    <svg style="margin-top: 2px;margin-right: 8px;" xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 14 14" fill="none">
+                        <path
+                            d="M13.6663 6.99984L12.4913 8.17484L7.83301 3.52484V13.6665H6.16634V3.52484L1.51634
+                             8.18317L0.333008 6.99984L6.99967 0.33317L13.6663 6.99984Z"
+                            fill="#05F26C" />
+                    </svg>
+                    <h6 style="color:#05F26C">1.27%</h6>
+                </div>
             </div>
         </div>
     </div>
 
-    <div class="market col-sm-12 col-md-3 col-lg-3 col-xl-2" style="background:rgba(107, 214, 240, 0.2)">
-        <div class="container col-10 d-flex" style="justify-content:space-around">
+    <div class="market col-sm-12 col-md-12 col-lg-3 col-xl-2" style="background:rgba(126, 227, 254, 0.3);border-radius: 5px">
+        <div class="container col-10 d-flex" style="justify-content:space-around;align-items: end;margin-top: 7px">
             <img src="/assets/image/LANA.png">
             <h5 style="color: #E2E2E2">{{this.marketInHomePage?.result[2].symbol}}
                 <h6>{{this.marketInHomePage?.result[2].volume}}</h6>
             </h5>
         </div>
         <br>
-        <div class="container col-10 d-flex" style="justify-content:space-around">
+        <div class="container col-10 d-flex" style="justify-content:space-around; align-items: baseline">
             <div>
                 <h6 style="color: #E2E2E2">1 H Change</h6>
                 <h6 style="color: #E2E2E2">24 H Change</h6>
             </div>
             <div>
-                <h6 style="color:#05F26C">0.73%</h6>
-                <h6 style="color:#05F26C">4.30%</h6>
+                <div style="margin-top: 3px; display: flex">
+                    <svg style="margin-top: 2px;margin-right: 8px;" xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 14 14" fill="none">
+                        <path
+                            d="M13.6663 6.99984L12.4913 8.17484L7.83301 3.52484V13.6665H6.16634V3.52484L1.51634
+                             8.18317L0.333008 6.99984L6.99967 0.33317L13.6663 6.99984Z"
+                            fill="#05F26C" />
+                    </svg>
+                    <h6 style="color:#05F26C">0.73%</h6>
+                </div>
+                 <div style="margin-top: 3px; display: flex;">
+                    <svg style="margin-top: 2px;margin-right: 8px;" xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 14 14" fill="none">
+                        <path
+                            d="M13.6663 6.99984L12.4913 8.17484L7.83301 3.52484V13.6665H6.16634V3.52484L1.51634
+                             8.18317L0.333008 6.99984L6.99967 0.33317L13.6663 6.99984Z"
+                            fill="#05F26C" />
+                    </svg>
+                    <h6 style="color:#05F26C">4.37%</h6>
+                </div>
             </div>
         </div>
     </div>
 
-    <div class="market col-sm-12 col-md-3 col-lg-3 col-xl-2" style="background:rgba(107, 214, 240, 0.2)">
-        <div class="container col-10 d-flex" style="justify-content:space-around">
+    <div class="market col-sm-12 col-md-12 col-lg-3 col-xl-2" style="background:rgba(126, 227, 254, 0.3);border-radius: 5px">
+        <div class="container col-10 d-flex" style="justify-content:space-around;align-items: end;margin-top: 7px">
             <img src="/assets/image/NBR.png">
             <h5 style="color: #E2E2E2">{{this.marketInHomePage?.result[3].symbol}}
                 <h6>{{this.marketInHomePage?.result[3].volume}}</h6>
             </h5>
         </div>
         <br>
-        <div class="container col-10 d-flex" style="justify-content:space-around">
+        <div class="container col-10 d-flex" style="justify-content:space-around; align-items: baseline;">
             <div>
                 <h6 style="color: #E2E2E2">1 H Change</h6>
                 <h6 style="color: #E2E2E2">24 H Change</h6>
             </div>
             <div>
-                <h6 style="color:#05F26C">0.03%</h6>
-                <h6 style="color:#05F26C">3.25%</h6>
+                <div style="margin-top: 3px; display: flex">
+                    <svg style="margin-top: 2px;margin-right: 8px;" xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 14 14" fill="none">
+                        <path
+                            d="M13.6663 6.99984L12.4913 8.17484L7.83301 3.52484V13.6665H6.16634V3.52484L1.51634
+                             8.18317L0.333008 6.99984L6.99967 0.33317L13.6663 6.99984Z"
+                            fill="#05F26C" />
+                    </svg>
+                    <h6 style="color:#05F26C">0.03%</h6>
+                </div>
+                 <div style="margin-top: 3px; display: flex;">
+                    <svg style="margin-top: 2px;margin-right: 8px;" xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 14 14" fill="none">
+                        <path
+                            d="M13.6663 6.99984L12.4913 8.17484L7.83301 3.52484V13.6665H6.16634V3.52484L1.51634
+                             8.18317L0.333008 6.99984L6.99967 0.33317L13.6663 6.99984Z"
+                            fill="#05F26C" />
+                    </svg>
+                    <h6 style="color:#05F26C">3.26%</h6>
+                </div>
             </div>
         </div>
     </div>

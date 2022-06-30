@@ -29,7 +29,7 @@
             "assets": [
               "src/favicon.ico",
               "src/assets",
-              "src/newfavicon.png"
+              "src/nfv.png"
             ],
             "styles": [
               "src/styles.scss"
