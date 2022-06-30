@@ -39,6 +39,7 @@
     font-size: 18px;
     color: #e2e2e2;
     cursor: pointer;
+    margin-top: 14px;
 }
 
 .line {
@@ -95,6 +96,8 @@
     font-size: 18px;
     color: #e2e2e2;
     cursor: pointer;
+    margin-top: 13px;
+
 }
 
 
@@ -179,9 +182,8 @@
     .titleMarket {
         margin-top: 70px;
     }
-    .titleMarket p{
-        margin-top: 14px;
-    }
+  
+    
 }
 
 @media (max-width:525px) {
@@ -205,8 +207,5 @@
         padding-top: 10px;
     }
 
-    .titleMarket p{
-        margin-top: 14px;
 
-    }
 }
