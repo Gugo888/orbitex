@@ -1,221 +1,243 @@
-<div class="home container-fluid d-sm-table d-md-flex d-lg-flex d-xl-flex text-center">
-    <div class="col-sm-12 col-md-6 col-lg-6 col-xl-6" style="padding-top:30px">
-        <p class="display-3 d-inline" style="color:#E2E2E2">BUY AND SELL <span style="color:#6BD6F0">CRYPTOCOIN</span></p>
-        <h4 style="color:#E2E2E2">
-            Everything you need to know about
-            cryptocurrency is here for you
-        </h4>
-        <button class="childbtn">Learn More</button>
-    </div>
-    <div class="col-sm-12 col-md-6 col-lg-6 col-xl-6">
-        <img src="/assets/image/cosmos.png" class="col-6">
-    </div>
-</div>
-<!-- //////////////////////////////////////////  Market-->
-<div class="titleMarket">
-    <div class="name">
-        <div class="line"></div>
-        <h2>Market</h2>
-    </div>
-    <p>See All</p>
-</div>
-<div class="container-fluid d-sm-table d-md-table d-lg-flex d-xl-flex text-center"
-    style="justify-content:space-around">
+<div class="container-fluid">
 
-    <div class="market col-sm-12 col-md-12 col-lg-3 col-xl-2" style="background:rgba(126, 227, 254, 0.3);border-radius: 5px;">
-        <div class="container col-10 d-flex" style="justify-content:space-around;align-items: end;margin-top: 7px">
-            <img src="/assets/image/ALBC.png">
-            <h5 style="color: #E2E2E2">{{this.marketInHomePage?.result[0].symbol}}
-                <h6>{{this.marketInHomePage?.result[0].volume}}</h6>
-            </h5>
+    <div class="home d-sm-table d-md-flex d-lg-flex d-xl-flex text-center">
+        <div class="col-sm-12 col-md-6 col-lg-6 col-xl-6" style="padding-top:30px">
+            <p class="display-3 d-inline" style="color:#E2E2E2">BUY AND SELL <span
+                    style="color:#6BD6F0">CRYPTOCOIN</span></p>
+            <h4 style="color:#E2E2E2">
+                Everything you need to know about
+                cryptocurrency is here for you
+            </h4>
+            <button class="childbtn">Learn More</button>
         </div>
-        <br>
-        <div class="container col-10 d-flex" style="justify-content:space-around; align-items: baseline">
-            <div>
-                <h6 style="color: #E2E2E2">1 H Change</h6>
-                <h6 style="color: #E2E2E2">24 H Change</h6>
-            </div>
-            <div>
-                <div style="margin-top: 3px; display: flex">
-                    <svg style="margin-top: 2px;margin-right: 8px" xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 14 14">
-                        <path d="M13.6663 7.00016L12.4913 5.82516L7.83301 10.4752V0.333496H6.16634V10.4752L1.51634 5.81683L0.333008 7.00016L6.99967 13.6668L13.6663 7.00016Z" fill="#C1373C"/>
-                        </svg>
-                    <h6 style="color:#C1373C">8.8%</h6>
-                </div>
-                 <div style="margin-top: 3px; display: flex;">
-                    <svg style="margin-top: 2px;margin-right: 8px" xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 14 14">
-                        <path d="M13.6663 7.00016L12.4913 5.82516L7.83301 10.4752V0.333496H6.16634V10.4752L1.51634 5.81683L0.333008 7.00016L6.99967 13.6668L13.6663 7.00016Z" fill="#C1373C"/>
-                        </svg>
-                    <h6 style="color:#C1373C">1.2%</h6>
-                </div>
-            </div>
+        <div class="col-sm-12 col-md-6 col-lg-6 col-xl-6" style="padding-top:30px">
+            <img src="/assets/image/cosmos.png" class="col-6">
         </div>
+    </div>
+    <!-- //////////////////////////////////////////  Market-->
+    <div class="titleMarket">
+        <div class="name">
+            <div class="line"></div>
+            <h2>Market</h2>
+        </div>
+        <p>See All</p>
     </div>
 
-    <div class="market col-sm-12 col-md-12 col-lg-3 col-xl-2" style="background:rgba(126, 227, 254, 0.3);border-radius: 5px">
-        <div class="container col-10 d-flex" style="justify-content:space-around;align-items: end;margin-top: 7px">
-            <img src="/assets/image/CRM.png">
-            <h5 style="color: #E2E2E2">{{this.marketInHomePage?.result[1].symbol}}
-                <h6>{{this.marketInHomePage?.result[1].volume}}</h6>
-            </h5>
-        </div>
-        <br>
-        <div class="container col-10 d-flex" style="justify-content:space-around; align-items: baseline">
-            <div>
-                <h6 style="color: #E2E2E2">1 H Change</h6>
-                <h6 style="color: #E2E2E2">24 H Change</h6>
-            </div>
-            <div>
-                <div style="margin-top: 3px; display: flex">
-                    <svg style="margin-top: 2px;margin-right: 8px;" xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 14 14" fill="none">
-                        <path
-                            d="M13.6663 6.99984L12.4913 8.17484L7.83301 3.52484V13.6665H6.16634V3.52484L1.51634
-                             8.18317L0.333008 6.99984L6.99967 0.33317L13.6663 6.99984Z"
-                            fill="#05F26C" />
-                    </svg>
-                    <h6 style="color:#05F26C">0.91%</h6>
+
+    <div class="row">
+
+        <div class="col-sm-12 col-lg-6 col-xl-3">
+            <div class="market" style="background:rgba(126, 227, 254, 0.3);border-radius: 5px;">
+                <div class="container col-10 d-flex"
+                    style="justify-content:space-around;align-items: end;margin-top: 7px">
+                    <img src="/assets/image/ALBC.png">
+                    <h5 style="color: #E2E2E2">{{this.marketInHomePage?.result[0].symbol}}
+                        <h6>{{this.marketInHomePage?.result[0].volume}}</h6>
+                    </h5>
                 </div>
-                 <div style="margin-top: 3px; display: flex;">
-                    <svg style="margin-top: 2px;margin-right: 8px;" xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 14 14" fill="none">
-                        <path
-                            d="M13.6663 6.99984L12.4913 8.17484L7.83301 3.52484V13.6665H6.16634V3.52484L1.51634
-                             8.18317L0.333008 6.99984L6.99967 0.33317L13.6663 6.99984Z"
-                            fill="#05F26C" />
-                    </svg>
-                    <h6 style="color:#05F26C">1.27%</h6>
+                <br>
+                <div class="container col-10 d-flex" style="justify-content:space-around; align-items: baseline">
+                    <div>
+                        <h6 style="color: #E2E2E2">1 H Change</h6>
+                        <h6 style="color: #E2E2E2">24 H Change</h6>
+                    </div>
+                    <div>
+                        <div style="margin-top: 3px; display: flex">
+                            <svg style="margin-top: 2px;margin-right: 8px" xmlns="http://www.w3.org/2000/svg" width="14"
+                                height="14" viewBox="0 0 14 14">
+                                <path
+                                    d="M13.6663 7.00016L12.4913 5.82516L7.83301 10.4752V0.333496H6.16634V10.4752L1.51634 5.81683L0.333008 7.00016L6.99967 13.6668L13.6663 7.00016Z"
+                                    fill="#C1373C" />
+                            </svg>
+                            <h6 style="color:#C1373C">8.8%</h6>
+                        </div>
+                        <div style="margin-top: 3px; display: flex;">
+                            <svg style="margin-top: 2px;margin-right: 8px" xmlns="http://www.w3.org/2000/svg" width="14"
+                                height="14" viewBox="0 0 14 14">
+                                <path
+                                    d="M13.6663 7.00016L12.4913 5.82516L7.83301 10.4752V0.333496H6.16634V10.4752L1.51634 5.81683L0.333008 7.00016L6.99967 13.6668L13.6663 7.00016Z"
+                                    fill="#C1373C" />
+                            </svg>
+                            <h6 style="color:#C1373C">1.2%</h6>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
-    </div>
 
-    <div class="market col-sm-12 col-md-12 col-lg-3 col-xl-2" style="background:rgba(126, 227, 254, 0.3);border-radius: 5px">
-        <div class="container col-10 d-flex" style="justify-content:space-around;align-items: end;margin-top: 7px">
-            <img src="/assets/image/LANA.png">
-            <h5 style="color: #E2E2E2">{{this.marketInHomePage?.result[2].symbol}}
-                <h6>{{this.marketInHomePage?.result[2].volume}}</h6>
-            </h5>
-        </div>
-        <br>
-        <div class="container col-10 d-flex" style="justify-content:space-around; align-items: baseline">
-            <div>
-                <h6 style="color: #E2E2E2">1 H Change</h6>
-                <h6 style="color: #E2E2E2">24 H Change</h6>
-            </div>
-            <div>
-                <div style="margin-top: 3px; display: flex">
-                    <svg style="margin-top: 2px;margin-right: 8px;" xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 14 14" fill="none">
-                        <path
-                            d="M13.6663 6.99984L12.4913 8.17484L7.83301 3.52484V13.6665H6.16634V3.52484L1.51634
-                             8.18317L0.333008 6.99984L6.99967 0.33317L13.6663 6.99984Z"
-                            fill="#05F26C" />
-                    </svg>
-                    <h6 style="color:#05F26C">0.73%</h6>
-                </div>
-                 <div style="margin-top: 3px; display: flex;">
-                    <svg style="margin-top: 2px;margin-right: 8px;" xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 14 14" fill="none">
-                        <path
-                            d="M13.6663 6.99984L12.4913 8.17484L7.83301 3.52484V13.6665H6.16634V3.52484L1.51634
-                             8.18317L0.333008 6.99984L6.99967 0.33317L13.6663 6.99984Z"
-                            fill="#05F26C" />
-                    </svg>
-                    <h6 style="color:#05F26C">4.37%</h6>
-                </div>
-            </div>
-        </div>
-    </div>
 
-    <div class="market col-sm-12 col-md-12 col-lg-3 col-xl-2" style="background:rgba(126, 227, 254, 0.3);border-radius: 5px">
-        <div class="container col-10 d-flex" style="justify-content:space-around;align-items: end;margin-top: 7px">
-            <img src="/assets/image/NBR.png">
-            <h5 style="color: #E2E2E2">{{this.marketInHomePage?.result[3].symbol}}
-                <h6>{{this.marketInHomePage?.result[3].volume}}</h6>
-            </h5>
-        </div>
-        <br>
-        <div class="container col-10 d-flex" style="justify-content:space-around; align-items: baseline;">
-            <div>
-                <h6 style="color: #E2E2E2">1 H Change</h6>
-                <h6 style="color: #E2E2E2">24 H Change</h6>
-            </div>
-            <div>
-                <div style="margin-top: 3px; display: flex">
-                    <svg style="margin-top: 2px;margin-right: 8px;" xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 14 14" fill="none">
-                        <path
-                            d="M13.6663 6.99984L12.4913 8.17484L7.83301 3.52484V13.6665H6.16634V3.52484L1.51634
-                             8.18317L0.333008 6.99984L6.99967 0.33317L13.6663 6.99984Z"
-                            fill="#05F26C" />
-                    </svg>
-                    <h6 style="color:#05F26C">0.03%</h6>
+        <div class="col-sm-12 col-lg-6 col-xl-3">
+            <div class="market" style="background:rgba(126, 227, 254, 0.3);border-radius: 5px">
+                <div class="container col-10 d-flex"
+                    style="justify-content:space-around;align-items: end;margin-top: 7px">
+                    <img src="/assets/image/CRM.png">
+                    <h5 style="color: #E2E2E2">{{this.marketInHomePage?.result[1].symbol}}
+                        <h6>{{this.marketInHomePage?.result[1].volume}}</h6>
+                    </h5>
                 </div>
-                 <div style="margin-top: 3px; display: flex;">
-                    <svg style="margin-top: 2px;margin-right: 8px;" xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 14 14" fill="none">
-                        <path
-                            d="M13.6663 6.99984L12.4913 8.17484L7.83301 3.52484V13.6665H6.16634V3.52484L1.51634
-                             8.18317L0.333008 6.99984L6.99967 0.33317L13.6663 6.99984Z"
-                            fill="#05F26C" />
-                    </svg>
-                    <h6 style="color:#05F26C">3.26%</h6>
+                <br>
+                <div class="container col-10 d-flex" style="justify-content:space-around; align-items: baseline">
+                    <div>
+                        <h6 style="color: #E2E2E2">1 H Change</h6>
+                        <h6 style="color: #E2E2E2">24 H Change</h6>
+                    </div>
+                    <div>
+                        <div style="margin-top: 3px; display: flex">
+                            <svg style="margin-top: 2px;margin-right: 8px;" xmlns="http://www.w3.org/2000/svg"
+                                width="14" height="14" viewBox="0 0 14 14" fill="none">
+                                <path d="M13.6663 6.99984L12.4913 8.17484L7.83301 3.52484V13.6665H6.16634V3.52484L1.51634
+                                 8.18317L0.333008 6.99984L6.99967 0.33317L13.6663 6.99984Z" fill="#05F26C" />
+                            </svg>
+                            <h6 style="color:#05F26C">0.91%</h6>
+                        </div>
+                        <div style="margin-top: 3px; display: flex;">
+                            <svg style="margin-top: 2px;margin-right: 8px;" xmlns="http://www.w3.org/2000/svg"
+                                width="14" height="14" viewBox="0 0 14 14" fill="none">
+                                <path d="M13.6663 6.99984L12.4913 8.17484L7.83301 3.52484V13.6665H6.16634V3.52484L1.51634
+                                 8.18317L0.333008 6.99984L6.99967 0.33317L13.6663 6.99984Z" fill="#05F26C" />
+                            </svg>
+                            <h6 style="color:#05F26C">1.27%</h6>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
+
+
+        <div class="col-sm-12 col-lg-6 col-xl-3">
+            <div class="market" style="background:rgba(126, 227, 254, 0.3);border-radius: 5px">
+                <div class="container col-10 d-flex"
+                    style="justify-content:space-around;align-items: end;margin-top: 7px">
+                    <img src="/assets/image/LANA.png">
+                    <h5 style="color: #E2E2E2">{{this.marketInHomePage?.result[2].symbol}}
+                        <h6>{{this.marketInHomePage?.result[2].volume}}</h6>
+                    </h5>
+                </div>
+                <br>
+                <div class="container col-10 d-flex" style="justify-content:space-around; align-items: baseline">
+                    <div>
+                        <h6 style="color: #E2E2E2">1 H Change</h6>
+                        <h6 style="color: #E2E2E2">24 H Change</h6>
+                    </div>
+                    <div>
+                        <div style="margin-top: 3px; display: flex">
+                            <svg style="margin-top: 2px;margin-right: 8px;" xmlns="http://www.w3.org/2000/svg"
+                                width="14" height="14" viewBox="0 0 14 14" fill="none">
+                                <path d="M13.6663 6.99984L12.4913 8.17484L7.83301 3.52484V13.6665H6.16634V3.52484L1.51634
+                                 8.18317L0.333008 6.99984L6.99967 0.33317L13.6663 6.99984Z" fill="#05F26C" />
+                            </svg>
+                            <h6 style="color:#05F26C">0.73%</h6>
+                        </div>
+                        <div style="margin-top: 3px; display: flex;">
+                            <svg style="margin-top: 2px;margin-right: 8px;" xmlns="http://www.w3.org/2000/svg"
+                                width="14" height="14" viewBox="0 0 14 14" fill="none">
+                                <path d="M13.6663 6.99984L12.4913 8.17484L7.83301 3.52484V13.6665H6.16634V3.52484L1.51634
+                                 8.18317L0.333008 6.99984L6.99967 0.33317L13.6663 6.99984Z" fill="#05F26C" />
+                            </svg>
+                            <h6 style="color:#05F26C">4.37%</h6>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <div class="col-sm-12 col-lg-6 col-xl-3">
+            <div class="market" style="background:rgba(126, 227, 254, 0.3);border-radius: 5px">
+                <div class="container col-10 d-flex"
+                    style="justify-content:space-around;align-items: end;margin-top: 7px">
+                    <img src="/assets/image/NBR.png">
+                    <h5 style="color: #E2E2E2">{{this.marketInHomePage?.result[3].symbol}}
+                        <h6>{{this.marketInHomePage?.result[3].volume}}</h6>
+                    </h5>
+                </div>
+                <br>
+                <div class="container col-10 d-flex" style="justify-content:space-around; align-items: baseline;">
+                    <div>
+                        <h6 style="color: #E2E2E2">1 H Change</h6>
+                        <h6 style="color: #E2E2E2">24 H Change</h6>
+                    </div>
+                    <div>
+                        <div style="margin-top: 3px; display: flex">
+                            <svg style="margin-top: 2px;margin-right: 8px;" xmlns="http://www.w3.org/2000/svg"
+                                width="14" height="14" viewBox="0 0 14 14" fill="none">
+                                <path d="M13.6663 6.99984L12.4913 8.17484L7.83301 3.52484V13.6665H6.16634V3.52484L1.51634
+                                 8.18317L0.333008 6.99984L6.99967 0.33317L13.6663 6.99984Z" fill="#05F26C" />
+                            </svg>
+                            <h6 style="color:#05F26C">0.03%</h6>
+                        </div>
+                        <div style="margin-top: 3px; display: flex;">
+                            <svg style="margin-top: 2px;margin-right: 8px;" xmlns="http://www.w3.org/2000/svg"
+                                width="14" height="14" viewBox="0 0 14 14" fill="none">
+                                <path d="M13.6663 6.99984L12.4913 8.17484L7.83301 3.52484V13.6665H6.16634V3.52484L1.51634
+                                 8.18317L0.333008 6.99984L6.99967 0.33317L13.6663 6.99984Z" fill="#05F26C" />
+                            </svg>
+                            <h6 style="color:#05F26C">3.26%</h6>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
     </div>
 
-</div>
+    <!-- ////////////////////////////////////////// orbitex -->
 
-<!-- ////////////////////////////////////////// orbitex -->
-<div class="orbitexTokenImg col-sm-12 col-md-8 col-lg-6 col-xl-6">
-    <img src="/assets/image/cosmonavt.png" class="col-6">
-</div>
+    <div class="orbitexToken">
+        <img src="/assets/image/cosmonavt.png">
 
-<div class="orbitexToken .G-card-color">
-    <h2>OrbiteX Token</h2>
-    <p> Orbitex has launched its own token, the OrbiteX token. OrbiteX is a utility token of Orbitex
-        exchange and ecosystem. You can trade fast and safe with OrbiteX on our exchange,play games,
-        get rewards and purchase various cool features like badges or energy boosts. </p>
-    <div class="divbtn">
-        <button class="childbtn">Trade now</button>
+        <h2>OrbiteX Token</h2>
+        <p> Orbitex has launched its own token, the OrbiteX token. OrbiteX is a utility token of Orbitex
+            exchange and ecosystem. You can trade fast and safe with OrbiteX on our exchange,play games,
+            get rewards and purchase various cool features like badges or energy boosts. </p>
+        <div class="divbtn">
+            <button class="childbtn">Trade now</button>
+        </div>
     </div>
-</div>
 
-<!-- //////////////////////////////////////////////News -->
-<div class="titleNews">
-    <div class="name">
-        <div class="line"></div>
-        <h2>News</h2>
+    <!-- //////////////////////////////////////////////News -->
+    <div class="titleNews">
+        <div class="name">
+            <div class="line"></div>
+            <h2>News</h2>
+        </div>
+        <p>See All</p>
     </div>
-    <p>See All</p>
-</div>
 
 
 
-<div class="container-fluid  d-sm-table d-md-flex d-lg-flex d-xl-flex">
-    <div *ngFor="let news of this.newsInHomePage" class="col-sm-12 col-md-4 col-lg-4 col-xl-4">
-        <div class="container col-12  ">
-            <img [src]="news.new.pictureUrl" class="col-12">
-            <div style="background: rgba(107,214,240,.2); margin-top: -8px;">
-                <h2 class="col-12 text-center text-white mt-2">{{news.new.title}}</h2>
-                <p class="col-12 text-white px-3">{{news.new.discription}}</p>
-                <h4 class="col-12 ms-3" style="color:#6BD6F0">Learn More</h4>
+    <div class="row">
+        <div *ngFor="let news of this.newsInHomePage" class="col-md-4">
+            <div class="news-item">
+                <img [src]="news.new.pictureUrl" class="col-12">
+                <div class="__content">
+                    <h2 class="col-12 text-center text-white mt-2">{{news.new.title}}</h2>
+                    <p class="col-12 text-white px-3">{{news.new.discription}}</p>
+                    <h4 class="col-12 ms-3 mt-auto" style="color:#6BD6F0">Learn More</h4>
+                </div>
             </div>
         </div>
     </div>
-</div>
 
-<!-- ////////////////////////////////////// subscruibe -->
+    <!-- ////////////////////////////////////// subscruibe -->
 
-<div style="margin-top:100px">
-    <div class="subscribe-block-avatar">
-        <img src="/assets/image/namak.png">
-    </div>
-    <div class="subscribe-block">
-        <h2>Subscribe to be informed</h2>
-        <p>Don’t miss latest news and the best deals in cryptomarkets.</p>
-        <div class="emialDiv">
-            <input class="emailInp" type="text" placeholder="Enter your email address">
+    <div style="margin-top:100px">
+        <div class="subscribe-block-avatar">
+            <img src="/assets/image/namak.png">
         </div>
-        <button class="subscribeBtn">Subscribe</button>
+        <div class="subscribe-block">
+            <h2>Subscribe to be informed</h2>
+            <p>Don’t miss latest news and the best deals in cryptomarkets.</p>
+            <div class="emialDiv">
+                <input class="emailInp" type="text" placeholder="Enter your email address">
+            </div>
+            <button class="subscribeBtn">Subscribe</button>
+        </div>
     </div>
+
 </div>
+
 
 
 

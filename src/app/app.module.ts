@@ -16,8 +16,10 @@ import { StakingComponent } from './staking/staking.component';
 import { GamesComponent } from './games/games.component';
 import { NotFoundComponent } from './not-found/not-found.component';
 import { HttpClientModule } from '@angular/common/http';
-import { LoginComponent } from './registration/login/login.component';
-import { RegisterComponent } from './registration/register/register.component';
+import { CoreComponent } from './core/core.component';
+import { LoginComponent } from './login/login.component';
+
+
 
 
 @NgModule({
@@ -33,9 +35,11 @@ import { RegisterComponent } from './registration/register/register.component';
     StakingComponent,
     GamesComponent,
     NotFoundComponent,
+    CoreComponent,
     LoginComponent,
-    RegisterComponent
+
   ],
+  
   imports: [
     BrowserModule,
     AppRoutingModule,

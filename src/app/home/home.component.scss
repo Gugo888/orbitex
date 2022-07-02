@@ -50,6 +50,15 @@
 }
 
 .orbitexToken {
+    margin-top: 320px;
+
+    img {
+        position: absolute;
+        top: -160px;
+        left: 25px;
+    }
+
+    position: relative;
     padding: 50px 50px 50px;
     background: rgba(107, 214, 240, 0.2);
     backdrop-filter: blur(100px);
@@ -60,14 +69,19 @@
 
 .orbitexToken h2 {
     margin-bottom: 50px;
-    background-color: green;
+    color: #6BD6F0;
 }
 
-.G-card-color {
-    background: rgba(107, 214, 240, .2);
-    -webkit-backdrop-filter: blur(100px);
-    backdrop-filter: blur(100px);
-    border-radius: 5px;
+.orbitexToken p {
+    font-family: 'Gotham';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 30px;
+    display: flex;
+    align-items: flex-end;
+    text-align: center;
+    color: #E2E2E2;
 }
 
 .orbitexToken .divbtn {
@@ -84,11 +98,6 @@
     font-size: 18px;
     border-radius: 5px;
     cursor: pointer;
-}
-
-.orbitexTokenImg {
-    display: flex;
-    justify-content: flex-start;
 }
 
 
@@ -163,6 +172,11 @@
 
 }
 
+.market {
+    margin-bottom: 20px;
+    padding-top: 10px;
+}
+
 
 @media (max-width: 1024px) {
     .orbitexToken {
@@ -175,15 +189,12 @@
 
         }
     }
-    .market {
-        margin-top: 20px;
-        padding-top: 10px;
-    }
+
     .titleMarket {
         margin-top: 70px;
     }
-  
-    
+
+
 }
 
 @media (max-width:525px) {
@@ -202,10 +213,24 @@
         margin-bottom: 15px;
     }
 
-    .market {
-        margin-top: 20px;
-        padding-top: 10px;
+
+
+
+}
+
+
+
+.news-item {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+
+
+    .__content {
+        min-height: 245px;
+        background: rgba(107, 214, 240, .2);
+        flex-grow: 1;
+        display: flex;
+        flex-direction: column;
     }
-
-
 }

@@ -28,3 +28,15 @@ nav {
     background: none;
     color: #6bd6f0;
 }
+
+.mobile-header {
+    width: 37px;
+    span {
+        display: block;
+        margin-bottom: 8px;
+        height: 3px;
+        background: #6BD6F0;
+        border-radius: 5px;
+    }
+}
+

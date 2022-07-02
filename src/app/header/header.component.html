@@ -1,9 +1,9 @@
-<header>
+<header class="d-none d-lg-flex">
 
     <img src="assets/image/logo.png" routerLink="" style="cursor:pointer">
 
     <nav class="d-none d-lg-flex">
-        <span routerLink="" routerLinkActive="_theme-light" [routerLinkActiveOptions]="{exact:true}">Home</span>
+        <span routerLink="/home" routerLinkActive="_theme-light" [routerLinkActiveOptions]="{exact:true}">Home</span>
         <span routerLink="/market" routerLinkActive="_theme-light">Market</span>
         <span routerLink="/trading" routerLinkActive="_theme-light">Trading</span>
         <span routerLink="/news" routerLinkActive="_theme-light">News</span>
@@ -11,8 +11,18 @@
         <span routerLink="/games" routerLinkActive="_theme-light" class="me-0">Games</span>
     </nav>
 
-    <button class="login-button d-none d-lg-inline" routerLink="/login">Sign In</button>
+    <button class="login-button d-none d-lg-inline">Sign In</button>
 
-    <img src="assets/image/banan.png" class="d-lg-none _pointer">
 </header>
 
+<header class="d-lg-none">
+    <img src="assets/image/logo.png" routerLink="" style="cursor:pointer">
+    <div class="mobile-header d-lg-none _pointer">
+        <span></span>
+        <span></span>
+        <span></span>
+    </div>
+    <!-- <div class="burger-menu" *ngIf="isOpen">
+        <div (click)="toggle()">123456</div>
+    </div> -->
+</header>
