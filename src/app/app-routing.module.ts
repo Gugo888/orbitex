@@ -11,21 +11,26 @@ import { StakingComponent } from './staking/staking.component';
 import { TradingComponent } from './trading/trading.component';
 
 const routes: Routes = [
-  {
-    path:'',
-    component:CoreComponent,
-    children:[
-      {path:'', redirectTo:'home', pathMatch:'full'},
-      {path:'home', component:HomeComponent},
-      {path:'market',component:MarketComponent},
-      {path:'trading',component:TradingComponent},
-      {path:'news',component:NewsComponent},
-      {path:'staking',component:StakingComponent},
-      {path:'games',component:GamesComponent},
+  
+  //   path:'',
+  //   component:CoreComponent,
+  //   children:[
+  //     {path:'', redirectTo:'home', pathMatch:'full'},
+  //     {path:'home', component:HomeComponent},
+  //     {path:'market',component:MarketComponent},
+  //     {path:'trading',component:TradingComponent},
+  //     {path:'news',component:NewsComponent},
+  //     {path:'staking',component:StakingComponent},
+  //     {path:'games',component:GamesComponent},
       
-    ]
-  },
-
+  //   ]
+  // },
+  {path:'', component:HomeComponent},
+  {path:'market',component:MarketComponent},
+  {path:'trading',component:TradingComponent},
+  {path:'news',component:NewsComponent},
+  {path:'staking',component:StakingComponent},
+  {path:'games',component:GamesComponent},
   {
     path:'login',
     component:LoginComponent
