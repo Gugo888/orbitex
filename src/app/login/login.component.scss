@@ -1,25 +1,25 @@
 .container-fluid {
-    padding: 0px;
+    padding-left: 0%;
+    padding-right: 0%;
+}
+.form {
+    display: block;
+}
+.left-section {
+    height: 100vh;
+    background: linear-gradient(270deg, #6D1878 1.72%, #020659 49.22%, #0B67A0 100%),
+        linear-gradient(180deg, #C4C4C4 0%, rgba(196, 196, 196, 0.595833) 40.42%, rgba(196, 196, 196, 0) 100%);
+
 }
 
+.right-section {
+    height: 100vh;
 
-.form-group {
-    margin-top: 40%;
-    margin-left: 3px;
 }
 
-.image-left {
-    position: relative;
-    .image-left-child {
-        position: absolute;
-        left:10%;
-        top:15%
-    }
-}
+@media (max-width: 576px) {
 
-@media (max-width: 576px) { 
-   
-    .Form{
+    .Form {
         display: none;
     }
- }
+}
