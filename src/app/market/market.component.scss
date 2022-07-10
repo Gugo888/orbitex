@@ -1,0 +1,61 @@
+.type-search {
+    margin-top: 80px;
+
+    .type-value {
+        button {
+            width: 126px;
+            height: 36px;
+            background: aqua;
+        }
+    }
+    .search-div {
+        float: right;
+    
+        .search-btn {
+            margin-left: 7px;
+            height: 36px;
+            width: 36px;
+            background-color: aqua;
+            border-radius: 11px;
+          
+        
+            img {
+                margin-top: -3px;
+            }
+        }
+    
+        .search-inp {
+            color: aqua;
+            flex-direction: row;
+            width: 343px;
+            height: 36px;
+            background: rgba(118, 118, 128, 0.24);
+            border-radius: 5px;
+        }
+    }
+}
+
+
+._table {
+    width: 100%;
+    margin-top: 30px;
+}
+
+.col-2{
+    background-color: aqua;
+}
+.col-3 {
+    background-color: brown;
+}
+
+.col-12 {
+    background-color: burlywood;
+}
+
+.asd {
+        // border-bottom: 4px solid #000000;
+        border-bottom: 0.3px solid rgba(226, 226, 226, 0.2);
+}
+.remb {
+    word-wrap:inherit;
+}

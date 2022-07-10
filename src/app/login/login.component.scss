@@ -1,25 +1,112 @@
 .container-fluid {
     padding-left: 0%;
-    padding-right: 0%;
 }
-.form {
-    display: block;
-}
+
 .left-section {
     height: 100vh;
     background: linear-gradient(270deg, #6D1878 1.72%, #020659 49.22%, #0B67A0 100%),
         linear-gradient(180deg, #C4C4C4 0%, rgba(196, 196, 196, 0.595833) 40.42%, rgba(196, 196, 196, 0) 100%);
+    text-align: center;
 
+    p {
+        font-family: 'Smooch Sans';
+        font-style: normal;
+        font-weight: 600;
+        font-size: 65px;
+        line-height: 78px;
+        text-align: center;
+        letter-spacing: 0.09em;
+        color: #6BD6F0;
+    }
 }
 
 .right-section {
     height: 100vh;
 
+    .rigth-section-items {
+        margin-top: 200px;
+    }
+
 }
 
-@media (max-width: 576px) {
+.back {
+    display: block;
+}
 
-    .Form {
-        display: none;
+.sign-in {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    width: 100px;
+    height: 36px;
+    background: #6BD6F0;
+    border-radius: 5px;
+}
+
+.sign-up {
+    width: 100px;
+    height: 36px;
+    background: rgba(118, 118, 128, 0.24);
+    border-radius: 5px;
+}
+
+.email-group {
+    label {
+        display: block;
+        font-family: 'Gotham';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 13px;
+        color: #6BD6F0;
+        margin-bottom: 10px;
     }
+
+    input {
+        width: 305px;
+        height: 36px;
+        background: rgba(118, 118, 128, 0.24);
+        border: 0.5px solid #6BD6F0;
+        border-radius: 5px;
+        color: #6BD6F0;
+    }
+}
+
+.password-group {
+    label {
+        display: block;
+        font-family: 'Gotham';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 13px;
+        color: #6BD6F0;
+        margin-bottom: 10px;
+        margin-top: 10px;
+    }
+
+    input {
+        width: 305px;
+        height: 36px;
+        background: rgba(118, 118, 128, 0.24);
+        border: 0.5px solid #6BD6F0;
+        border-radius: 5px;
+        margin-bottom: 20px;
+        color: #6BD6F0;
+    }
+}
+
+.checkbox-group {
+    a {
+        color: #6BD6F0;
+        margin-left: 66px
+    }
+}
+
+.sign-in-now {
+    width: 305px;
+    height: 40px;
+    background: #6BD6F0;
+    border: 2px solid #6BD6F0;
+    border-radius: 5px;
+    margin-top: 20px;
 }
