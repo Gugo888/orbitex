@@ -38,7 +38,7 @@ import { TradingComponent } from './trading/trading.component';
 
 const routes: Routes = [
   {
-    path: '',
+    path: '',redirectTo:'', pathMatch:'full',
     component: HomeComponent,
   },
 
