@@ -11,8 +11,24 @@
         font-size: 30px;
         line-height: 40px;
     }
+
+
 }
 
+.layer{
+    width: 100%;
+    height: 640px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    background: linear-gradient(270deg, #6D1878 1.72%, #020659 49.22%, #0B67A0 100%),
+        linear-gradient(180deg, #C4C4C4 0%, rgba(196, 196, 196, 0.595833) 40.42%, rgba(196, 196, 196, 0) 100%);
+    img {
+        width: 49%;
+        height: 49%;
+    }
+}
 
 
 .titleMarket {
@@ -197,9 +213,25 @@
 
 }
 
+@media (max-width:768px) {
+    .layer {
+        height: 721px;
+    }
+    .col-6 {
+        width: 41%;
+    }
+    .titleMarket{
+        margin-top: 85px;   
+    }
+}
+
 @media (max-width:525px) {
+
+    .layer {
+        height: 710px;
+    }
     .subscribe-block {
-        padding: 33px;
+        padding: 20px;
     }
 
     .subscribe-block-avatar {
@@ -210,11 +242,17 @@
     }
 
     .childbtn {
-        margin-bottom: 15px;
+        margin: -30px;
     }
 
-
-
+    .orbitexToken {
+        img {
+            position: absolute;
+            top: -89px;
+            left: 25px;
+            height: 108px;
+        }
+    }
 
 }
 
