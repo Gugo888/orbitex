@@ -1,10 +1,10 @@
-<!-- <div class="container-fluid">
+<div class="container-fluid">
     <div class="type-search d-flex justify-content-between">
         <div class="type-value col-lg-6">
-            <button>All</button>
-            <button>BTC</button>
-            <button>ETH</button>
-            <button>USDT</button>
+            <button (click)="all()">All</button>
+            <button (click)="btc()">BTC</button>
+            <button (click)="eth()">ETH</button>
+            <button (click)="usdt()">USDT</button>
         </div>
         <div class="col-6">
             <div class="search-div d-flex">
@@ -15,80 +15,29 @@
     </div>
 
     <table class="_table d-xl-table">
-        <tr class="asd row col-12">
-            <th class="col">Pair</th>
-            <th class="col">24H Changes</th>
-            <th class="col">Last Price</th>
-            <th class="col">24H Volume</th>
-            <th class="col">24H Quote Volume</th>
+        <tr class="row col-12">
+            <span class="col">Pair</span>
+            <span class="col">24H Changes</span>
+            <span class="col">Last Price</span>
+            <span class="col">24H Volume</span>
+            <span class="col">24H Quote Volume</span>
         </tr>
-        <div class="row col-12">
-            <h3 class="col">Last</h3>
-            <h3 class="col">Last</h3>
-            <h3 class="col">Last</h3>
-            <h3 class="col">Last</h3>
-            <h3 class="col">Last</h3>
-
-        </div>
-        <div class="row col-12">
-            <th class="col">Changes</th>
-            <th class="col">Changes</th>
-            <th class="col">Changes</th>
-            <th class="col">Changes</th>
-            <th class="col">Changes</th>
-
-        </div>
-        <div class="row col-12">
-            <th class="col">Changes</th>
-            <th class="col">Changes</th>
-            <th class="col">Changes</th>
-            <th class="col">Changes</th>
-            <th class="col">Changes</th>
-
-        </div>
-        <div class="row col-12">
-            <th class="col">Changes</th>
-            <th class="col">Changes</th>
-            <th class="col">Changes</th>
-            <th class="col">Changes</th>
-            <th class="col">Changes</th>
-
-        </div>
-        <div class="row col-12">
-            <th class="col">Changes</th>
-            <th class="col">Changes</th>
-            <th class="col">Changes</th>
-            <th class="col">Changes</th>
-            <th class="col">Changes</th>
-
-        </div>
-        <div class="row col-12">
-            <th class="col">Changes</th>
-            <th class="col">Changes</th>
-            <th class="col">Changes</th>
-            <th class="col">Changes</th>
-            <th class="col">Changes</th>
-
-        </div>
-        <div class="row col-12">
-
-            <span class="col">dwdwd</span>
-            <span class="col">dwdwd</span>
-            <span class="col">dwdwd</span>
-            <span class="col">dwdwd</span>
-            <span class="col">dwdwd</span>
-        </div>
-        <div class="row col-12">
-
-            <span class="col">dwdwd</span>
-            <span class="col">dwdwd</span>
-            <span class="col">dwdwd</span>
-            <span class="col">dwdwd</span>
-            <span class="col">dwdwd</span>
+        <hr>
+        <div class="info-line row col-12" *ngFor="let item of this.arr">
+            <span class="col">
+                <img class="logo-img" [src]='url+item.quote+png'>
+                {{item.symbol}}
+            </span>
+            <span [ngClass]="{red:item.amountPrecision >= 3,
+            green:item.amountPrecision <3
+            }" class="col">{{item.amountPrecision}}</span>
+            <span class="col">{{item.bid}}</span>
+            <span class="col">{{item.price}}</span>
+            <span class="col">{{item.ask}} {{ item.quote}}</span>
         </div>
     </table>
 
 
 </div>
 
-<app-footer></app-footer> -->
+<app-footer></app-footer>

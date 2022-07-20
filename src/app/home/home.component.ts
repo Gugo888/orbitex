@@ -10,6 +10,7 @@ export class HomeComponent implements OnInit {
 
   newsInHomePage: any;
   marketInHomePage:any;
+  market:any
   countNews = {
     segmentsElementCount: 3,
     startId: 0
@@ -23,6 +24,7 @@ export class HomeComponent implements OnInit {
       this.newsInHomePage = news;
     })
   }
+
 
   getMarket() {
     this.service.getFourTradeSymbol().subscribe(market => {

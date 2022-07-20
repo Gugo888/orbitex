@@ -8,22 +8,23 @@
             background: aqua;
         }
     }
+
     .search-div {
         float: right;
-    
+
         .search-btn {
             margin-left: 7px;
             height: 36px;
             width: 36px;
             background-color: aqua;
             border-radius: 11px;
-          
-        
+
+
             img {
                 margin-top: -3px;
             }
         }
-    
+
         .search-inp {
             color: aqua;
             flex-direction: row;
@@ -39,23 +40,42 @@
 ._table {
     width: 100%;
     margin-top: 30px;
+    background: rgba(107, 214, 240, 0.2);
+    backdrop-filter: blur(100px);
+    border-radius: 5px;
 }
 
-.col-2{
+.col-2 {
     background-color: aqua;
 }
+
 .col-3 {
     background-color: brown;
 }
 
-.col-12 {
-    background-color: burlywood;
+.info-line {
+    height: 60px;
+    align-items: center;
 }
 
-.asd {
-        // border-bottom: 4px solid #000000;
-        border-bottom: 0.3px solid rgba(226, 226, 226, 0.2);
+.logo-img {
+    height: 44px;
+    margin-right: 9px;
 }
+
 .remb {
-    word-wrap:inherit;
+    word-wrap: inherit;
+}
+
+span {
+    padding-left: 30px;
+    color: #E2E2E2;
+}
+
+.red {
+    color: red;
+}
+
+.green {
+    color: green;
 }

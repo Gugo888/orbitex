@@ -1,6 +1,7 @@
 import { Injectable } from '@angular/core';
 import { HttpClient } from '@angular/common/http'
 import {ActiveNews} from '../app/type.modal'
+import {take} from 'rxjs'
 @Injectable({
   providedIn: 'root'
 })
@@ -19,6 +20,10 @@ export class Options {
 
   getFourTradeSymbol() {
     return this.http.get(`${this.link}bololextradingplatform/publicapis/tradablesymbols4`)
+  }
+
+  getAllTradeSymbol() {
+    return this.http.get(`${this.link}bololextradingplatform/publicapis/tradablesymbols?}`)
   }
 
 }
