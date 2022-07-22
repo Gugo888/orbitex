@@ -5,7 +5,6 @@
         button {
             width: 126px;
             height: 36px;
-            background: aqua;
         }
     }
 
@@ -18,7 +17,7 @@
             width: 36px;
             background-color: aqua;
             border-radius: 11px;
-
+            margin-top: 1px;
 
             img {
                 margin-top: -3px;
@@ -78,4 +77,23 @@ span {
 
 .green {
     color: green;
+}
+
+// .colorDefault{
+//     background: rgba(118, 118, 128, 0.24);
+// }
+.colorDefault{
+    background: aqua;
+    border-radius: 5px;
+}
+
+.colorBlue {
+    background: rgba(118, 118, 128, 0.24);
+    border-radius: 5px;
+
+}
+
+.btn {
+    background: rgba(118, 118, 128, 0.24);
+
 }

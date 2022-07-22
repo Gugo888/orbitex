@@ -1,15 +1,16 @@
-<div class="container-fluid">
+<!-- <div class="container-fluid">
     <div class="type-search d-flex justify-content-between">
         <div class="type-value col-lg-6">
-            <button (click)="all()">All</button>
-            <button (click)="btc()">BTC</button>
-            <button (click)="eth()">ETH</button>
-            <button (click)="usdt()">USDT</button>
+            <button [ngClass]="{'colorBlue':!btn1, 'colorDefault':btn1}" (click)="all()">All</button>
+            <button [ngClass]="{ 'colorBlue':!btn2, 'colorDefault':btn2}" (click)="btc()">BTC</button>
+            <button [ngClass]="{ 'colorBlue':!btn3, 'colorDefault':btn3}" (click)="eth()">ETH</button>
+            <button [ngClass]="{'colorBlue':!btn4, 'colorDefault':btn4}" (click)="usdt()">USDT</button>
         </div>
         <div class="col-6">
             <div class="search-div d-flex">
-                <input class="search-inp" placeholder="Search" type="search" title="search valute type">
-                <button class="search-btn"><img src="/assets/image/search.png"></button>
+                <input #ref class="search-inp" placeholder="Search" type="search" title="search valute type">
+                <button (click)="filterWithName(ref.value)" class="search-btn"><img
+                        src="/assets/image/search.png"></button>
             </div>
         </div>
     </div>
@@ -29,15 +30,20 @@
                 {{item.symbol}}
             </span>
             <span [ngClass]="{red:item.amountPrecision >= 3,
-            green:item.amountPrecision <3
-            }" class="col">{{item.amountPrecision}}</span>
+            green:item.amountPrecision < 3}" class="col">{{item.amountPrecision}}</span>
             <span class="col">{{item.bid}}</span>
             <span class="col">{{item.price}}</span>
             <span class="col">{{item.ask}} {{ item.quote}}</span>
         </div>
     </table>
 
+    <div class="btn-toolbar justify-content-end mt-2" role="toolbar" aria-label="Toolbar with button groups">
+        <div class="btn-group" role="group" aria-label="First group">
+            <button type="button" class="btn btn-primary">1</button>
+            <button type="button" class="btn btn-primary">2</button>
+            <button type="button" class="btn btn-primary">3</button>
+            <button type="button" class="btn btn-primary">4</button>
+        </div>
+    </div>
 
-</div>
-
-<app-footer></app-footer>
+    <app-footer></app-footer> -->
