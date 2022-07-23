@@ -30,7 +30,9 @@ export class MarketComponent implements OnInit {
   }
 
   all() {
-    this.arr = this.newsInMarketPage.result
+    this.arr = this.newsInMarketPage.result;
+    this.arr.length = 12;
+
     this.btn1 = true;
     this.btn2 = false;
     this.btn3 = false;
@@ -44,6 +46,8 @@ export class MarketComponent implements OnInit {
     this.arr = this.newsInMarketPage.result.filter((elem: any) => {
       return elem.quote === 'USDT'
     });
+    this.arr.length = 12;
+
   }
   eth() {
     this.btn1 = false;
@@ -53,6 +57,8 @@ export class MarketComponent implements OnInit {
     this.arr = this.newsInMarketPage.result.filter((elem: any) => {
       return elem.quote === 'ETH'
     })
+    this.arr.length = 12;
+
   }
   btc() {
     this.btn1 = false;
@@ -62,6 +68,8 @@ export class MarketComponent implements OnInit {
     this.arr = this.newsInMarketPage.result.filter((elem: any) => {
       return elem.quote === 'BTC'
     })
+    this.arr.length = 12;
+
   }
 
   filterWithName(typeBtc:string) {
