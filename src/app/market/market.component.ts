@@ -49,6 +49,7 @@ export class MarketComponent implements OnInit {
     this.arr.length = 12;
 
   }
+  
   eth() {
     this.btn1 = false;
     this.btn2 = false;
